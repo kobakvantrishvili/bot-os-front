@@ -7,15 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        "green-300": "#6f9e86",
-        "green-500": "#4f9e75",
-        "green-800": "#209d5c",
-        "yellow-300": "#ffedb2",
-        "yellow-500": "#ffe180",
-        "yellow-800": "#ffd034",
-        "blue-300": "#9fb8e3",
-        "blue-500": "#719be3",
-        "blue-800": "#2d70e3",
+        "primary-100": "#daf2e6",
+        "primary-300": "#a1e5c2",
+        "primary-500": "#60bf8e",
+        "primary-800": "#209d5c",
+        "secondary-300": "#ffedb2",
+        "secondary-500": "#ffe180",
+        "secondary-800": "#ffd034",
+        "tertiary-300": "#9fb8e3",
+        "tertiary-500": "#719be3",
+        "tertiary-800": "#2d70e3",
       },
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
