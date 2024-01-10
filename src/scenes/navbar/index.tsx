@@ -5,7 +5,8 @@ import { SelectedPage } from "@/shared/types";
 import Link from "@/scenes/navbar/Link";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 
 type Props = {
   isTopOfPage: boolean;
@@ -57,10 +58,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </div>
           ) : (
             <button
-              className=" rounded-2xl bg-secondary-800 p-2"
+              // className=" rounded-2xl bg-secondary-800 p-2"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-              <Bars3Icon className="h-6 w-6" />
+              <Bars3BottomRightIcon className="h-10 w-10" />
             </button>
           )}
         </div>
@@ -68,11 +69,20 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
       {/* MOBILE MENU MODEL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-800 drop-shadow-xl">
+        <motion.div
+          className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-800 drop-shadow-xl"
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-primary-100" />
+              <XMarkIcon className="h-10 w-10 text-primary-100" />
             </button>
           </div>
 
@@ -97,7 +107,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           <div className="flex justify-center mt-10 text-2xl">
             <ConnectButton>Connect</ConnectButton>
           </div>
-        </div>
+        </motion.div>
       )}
     </nav>
   );

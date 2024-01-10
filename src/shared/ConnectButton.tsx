@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 type Props = {
-  children: string;
+  children: ReactNode;
 };
 
 const ConnectButton = ({ children }: Props) => {
@@ -7,7 +9,7 @@ const ConnectButton = ({ children }: Props) => {
 
   return (
     <button
-      className="rounded-md font-montserrat bg-secondary-800 px-10 py-2 hover:bg-tertiary-800 hover:text-white"
+      className="transition rounded-md font-montserrat bg-secondary-800 px-10 py-2  hover:bg-tertiary-800 hover:text-white hover:scale-105 duration-300"
       onClick={() => toggleChooseWalletScreen()}
     >
       {children}
