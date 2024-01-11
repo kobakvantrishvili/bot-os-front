@@ -27,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       >
         <div className={`${flexBetween} mx-auto w-5/6 gap-16`}>
           {/* LEFT SIDE */}
-          <div className={`${flexBetween} gap-2`}>
+          <div className={`${flexBetween} gap-4 w-[150px]`}>
             <img alt="logo" src={Logo} />
             <img alt="name" src={Name} />
           </div>
@@ -52,7 +52,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   setSelectedPage={setSelectedPage}
                 />
               </div>
-              <div className={`${flexBetween} gap-8`}>
+              <div className={`${flexBetween} gap-8 w-[150px]`}>
                 <ConnectButton>Connect</ConnectButton>
               </div>
             </div>

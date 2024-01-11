@@ -22,6 +22,9 @@ export default {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      content: {
+        eyesmall: "url('./assets/eye-small-transparent.png')",
+      },
     },
     screens: {
       xs: "480px",
