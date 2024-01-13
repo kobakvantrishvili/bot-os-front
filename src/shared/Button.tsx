@@ -4,7 +4,7 @@ type Props = {
   children: ReactNode;
 };
 
-const ConnectButton = ({ children }: Props) => {
+const Button = ({ children }: Props) => {
   const toggleChooseWalletScreen = () => {};
 
   return (
@@ -17,4 +17,4 @@ const ConnectButton = ({ children }: Props) => {
   );
 };
 
-export default ConnectButton;
+export default Button;

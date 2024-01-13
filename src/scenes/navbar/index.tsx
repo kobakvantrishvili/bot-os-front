@@ -1,6 +1,6 @@
 import Logo from "@/assets/logo-small-transparent.png";
 import Name from "@/assets/name-small-transparent.png";
-import ConnectButton from "@/shared/ConnectButton";
+import ConnectButton from "@/shared/Button";
 import { SelectedPage } from "@/shared/types";
 import Link from "@/scenes/navbar/Link";
 import useMediaQuery from "@/hooks/useMediaQuery";

@@ -5,7 +5,7 @@ import Speed from "@/assets/speed.png";
 import Intuitivity from "@/assets/intuitivity.png";
 import Name from "@/assets/name-large-transparent.png";
 import { motion } from "framer-motion";
-import ConnectButton from "@/shared/ConnectButton";
+import Button from "@/shared/Button";
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
@@ -81,12 +81,12 @@ const About = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <ConnectButton>
+              <Button>
                 <p className={`${flexSetup}`}>
                   Get Started &nbsp;
                   <ArrowLongRightIcon className="h-6 w-6" />
                 </p>
-              </ConnectButton>
+              </Button>
             </motion.div>
           </div>
         </div>
