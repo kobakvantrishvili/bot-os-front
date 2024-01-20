@@ -9,10 +9,7 @@ type Props = {
 
 const Features = ({ setSelectedPage }: Props) => {
   return (
-    <section
-      id={`${SelectedPage.Features}`}
-      className="w-5/6 mx-auto py-20 min-h-full"
-    >
+    <section id={`${SelectedPage.Features}`} className="w-5/6 mx-auto py-10">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Features)}
       >
@@ -28,10 +25,14 @@ const Features = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <p className="font-montserrat text-6xl sm:text-8xl">FEATURES</p>
+          <div className="relative">
+            <div className="before:absolute before:-bottom-6 before:-right-6 before:z-[-1] before:content-abstractwaves">
+              <p className="font-montserrat text-6xl sm:text-8xl">FEATURES</p>
+            </div>
+          </div>
         </motion.div>
 
-        <div className="flex flex-col items-center gap-16 py-10">
+        <div className="flex flex-col items-center gap-16 py-5">
           {/* GRAPHICS AND DESCRIPTION */}
           {featuresArray.map((feature: FeatureType) => (
             <Feature

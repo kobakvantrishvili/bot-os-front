@@ -24,6 +24,7 @@ export default {
       },
       content: {
         eyesmall: "url('./assets/eye-small-transparent.png')",
+        abstractwaves: "url('./assets/abstract-waves.png')",
       },
     },
     screens: {

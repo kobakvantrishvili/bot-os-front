@@ -3,6 +3,8 @@ import Navbar from "./scenes/navbar";
 import { SelectedPage } from "./shared/types";
 import About from "./scenes/about";
 import Features from "./scenes/features";
+import Pricing from "./scenes/pricing";
+import Footer from "./scenes/footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -26,7 +28,7 @@ function App() {
   });
 
   return (
-    <div className="app bg-white">
+    <div className="app bg-white scroll-smooth overscroll-contain">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -34,6 +36,8 @@ function App() {
       />
       <About setSelectedPage={setSelectedPage} />
       <Features setSelectedPage={setSelectedPage} />
+      <Pricing setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
