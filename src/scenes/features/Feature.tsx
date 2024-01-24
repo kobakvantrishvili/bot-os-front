@@ -1,4 +1,4 @@
-import HText from "@/shared/HText";
+import HText from "@/shared/components/HText";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 import ListItem from "./ListItem";
@@ -51,8 +51,8 @@ const Feature = (props: Props) => {
         >
           <p className="my-5 text-left">{props.description}</p>
           <ul className="gap-4 flex flex-col">
-            {props.listItems.map((listItem: string) => (
-              <ListItem>{listItem}</ListItem>
+            {props.listItems.map((listItem: string, index) => (
+              <ListItem key={index}>{listItem}</ListItem>
             ))}
           </ul>
         </motion.div>

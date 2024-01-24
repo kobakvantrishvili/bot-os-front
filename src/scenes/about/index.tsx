@@ -5,7 +5,7 @@ import Speed from "@/assets/speed.png";
 import Intuitivity from "@/assets/intuitivity.png";
 import Name from "@/assets/name-large-transparent.png";
 import { motion } from "framer-motion";
-import Button from "@/shared/Button";
+import Button from "@/shared/components/Button";
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import useMediaQuery from "@/hooks/useMediaQuery";
 

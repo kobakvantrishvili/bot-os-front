@@ -11,12 +11,17 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
-    "ethers": "^6.9.2",
+    "@web3-react/core": "^8.2.3",
+    "@web3-react/metamask": "^8.2.4",
+    "@web3-react/walletconnect-connector": "^6.2.4",
+    "@web3-react/walletlink-connector": "^6.2.14",
+    "ethers": "^6.10.0",
     "framer-motion": "^10.17.9",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.49.3"
+    "react-hook-form": "^7.49.3",
+    "web3-react-phantom": "^1.0.4"
   },
   "devDependencies": {
     "@types/node": "^20.10.7",

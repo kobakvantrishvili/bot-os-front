@@ -34,8 +34,9 @@ const Features = ({ setSelectedPage }: Props) => {
 
         <div className="flex flex-col items-center gap-16 py-5">
           {/* GRAPHICS AND DESCRIPTION */}
-          {featuresArray.map((feature: FeatureType) => (
+          {featuresArray.map((feature: FeatureType, index) => (
             <Feature
+              key={index}
               isLeftToRight={feature.isLeftToRight}
               image={feature.image}
               title={feature.title}

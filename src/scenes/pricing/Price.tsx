@@ -1,7 +1,7 @@
-import HText from "@/shared/HText";
+import HText from "@/shared/components/HText";
 import EyeSmall from "@/assets/alt-logo-medium-transparent-dark-yellow.png";
 import Eth from "@/assets/eth.png";
-import Button from "@/shared/Button";
+import Button from "@/shared/components/Button";
 
 type Props = {
   price: string;
